@@ -1,3 +1,5 @@
 {
-    "editor.wordWrap": "on"
+    "editor.wordWrap": "on",
+    "dart.cliConsole": "terminal",
+    "debug.internalConsoleOptions": "neverOpen"
 }

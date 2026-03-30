@@ -6,7 +6,7 @@ void main() {
 
   // Permite que o dart saiba que a string valor vai ter algo dentro dela ou vai ser encerrado. Tratando o erro que causaria se fosse nulo
   // Existe bibliotecas que fazem isso de forma mais simples
-  if(valor == null ||){
+  if(valor == null || valor.isEmpty){
     stdout.write('O campo distância é obrigatorio!\n');
     return;
   }
