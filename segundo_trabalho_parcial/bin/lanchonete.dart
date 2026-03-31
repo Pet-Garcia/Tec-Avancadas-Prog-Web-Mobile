@@ -1,3 +1,18 @@
+/*
+3. Uma lanchonete oferece o seguinte cardápio:
+Lanche Código Valor(R$)
+Cachorro Quente 101 14,20
+Bauru Simples 102 12,30
+Bauru com Ovo 103 13,50
+Hambúrguer 104 10,20
+Cheeseburger 105 15,30
+Refrigerante 106 10,00
+Desenvolva um programa que leia o código do item pedido e a quantidade
+desejada. O programa deve calcular e exibir o valor total a ser pago pelo cliente.
+Caso seja informado um código que não esteja na lista, o sistema deve exibir a
+mensagem "Código do lanche inválido".
+*/
+
 import 'dart:io';
 
 void main() {

@@ -1,3 +1,15 @@
+/*
+4. Desenvolva um programa que solicite o nome de um estado brasileiro e informe
+sua respectiva região:
+● Norte: Acre, Amapá, Amazonas, Pará, Rondônia, Roraima, Tocantins
+● Nordeste: Alagoas, Bahia, Ceará, Maranhão, Paraíba, Pernambuco, Piauí, Rio
+Grande do Norte, Sergipe
+● Centro-Oeste: Goiás, Mato Grosso, Mato Grosso do Sul, Distrito Federal
+● Sudeste: Espírito Santo, Minas Gerais, Rio de Janeiro, São Paulo
+● Sul: Paraná, Rio Grande do Sul, Santa Catarina
+Se o estado informado não constar na lista, exiba: "Estado não reconhecido."
+*/
+
 import 'dart:io';
 
 void main() {

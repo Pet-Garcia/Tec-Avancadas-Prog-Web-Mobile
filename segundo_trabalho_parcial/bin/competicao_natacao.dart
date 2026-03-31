@@ -1,3 +1,14 @@
+/*
+1. Em uma competição de natação, os nadadores são premiados com base na
+distância máxima percorrida. A premiação segue as seguintes regras:
+● Se a distância for menor que 800 metros, o nadador recebe R$ 5.000,00.
+● Se a distância estiver entre 800 e 1500 metros (inclusive 800 e 1500), o prêmio
+é de R$ 10.000,00.
+● Para distâncias superiores a 1500 metros, o nadador recebe R$ 15.000,00.
+Desenvolva um programa que leia a distância percorrida e exiba na tela o valor do
+prêmio correspondente.
+*/
+
 import 'dart:io';
 
 void main() {
