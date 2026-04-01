@@ -42,4 +42,6 @@ void main() {
   } else{
     stdout.write('Estado não reconhecido\n');
   }
+
+  return;
 }

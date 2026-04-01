@@ -33,22 +33,8 @@ void main() {
     return;
   }
 
-  stdout.write('-*- BEBIDAS -*-\n');
-  stdout.write('Refrigerante | 108 | 10.00 \n');
-  stdout.write('Guarana | 109 | 10.00 \n');
-  stdout.write('Agua | 110 | 1.00 \n');
-  stdout.write('Vinho | 111 | 12.00 \n');
-  stdout.write('Insira o codigo da bebida: \n');
-  String? codigobebida = stdin.readLineSync();
-  
-  if(codigobebida == null || codigobebida.isEmpty){
-    stdout.write('E obrigatorio que algum valor seja inserido!\n');
-    return;
-  }
-
   double? opcao = double.tryParse(codigocomida) ?? 0;
-  double? quantidade = double.tryParse(codigobebida) ?? 0;
-  double? total;
+  double total = 0;
 
   switch(opcao){
     case 101:
@@ -67,7 +53,63 @@ void main() {
       total = 15.3;
 
     case 106:
-      total = 10;
+      total = 13.5;
+    
+    case 107:
+      total = 16.2;
+
+    default:
+      stdout.write('Codigo invalido!\n');
+      return;
+  }
+
+  stdout.write('-*- BEBIDAS -*-\n');
+  stdout.write('Refrigerante | 108 | 10.00 \n');
+  stdout.write('Guarana | 109 | 10.00 \n');
+  stdout.write('Agua | 110 | 1.00 \n');
+  stdout.write('Vinho | 111 | 12.00 \n');
+  stdout.write('Insira o codigo da bebida: \n');
+  String? codigobebida = stdin.readLineSync();
+  
+  if(codigobebida == null || codigobebida.isEmpty){
+    stdout.write('E obrigatorio que algum valor seja inserido!\n');
+    return;
+  }
+
+  double? opcao2 = double.tryParse(codigobebida) ?? 0;
+
+  switch(opcao2){
+    case 108:
+      if(opcao == 107){
+        stdout.write('A Pizza nao pode ser pedida com refrigerante');
+        return;
+      }
+      total = total + 10;
+
+    case 109:
+      if(opcao == 102 || opcao == 103){
+        stdout.write('O lanche Bauru nao pode ser pedido com Guarana\n');
+        return;
+      } else if(opcao == 107){
+        stdout.write('A Pizza nao pode ser pedida com Guarana');
+      } else{
+        total = total + 10;
+      }
+
+    case 110:
+      if(opcao == 106){
+        stdout.write('O lanche X-Frango nao pode ser pedido com agua\n');
+        return;
+      } else{
+        total = total + 1;
+      }
+    
+    case 111:
+      total = total + 12;
+
+    default:
+      stdout.write('Codigo invalido!\n');
+      return;
   }
 
   stdout.write('O valor da compra eh de: $total\n');
