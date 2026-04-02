@@ -27,6 +27,7 @@ void main() {
   double salarioliquido;
 
   if(salario <= 2000){
+    imposto = 0;
     salarioliquido = salario;
   } else if(salario <= 5000){
     imposto = salario * 0.10;

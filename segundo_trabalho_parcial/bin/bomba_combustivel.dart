@@ -51,7 +51,7 @@ void main() {
       preco = 4.2;
 
     default:
-      stdout.write('Deve ser inserido um dos tipos de combustivel!\n');
+      stdout.write('Combustivel invalido!\n');
       return;
   }
 

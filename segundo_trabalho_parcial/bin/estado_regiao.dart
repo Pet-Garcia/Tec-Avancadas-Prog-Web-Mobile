@@ -31,16 +31,22 @@ void main() {
 
   if(norte.any((e) => e.toLowerCase() == estado.toLowerCase())){
     stdout.write('O estado $nome pertence ao Norte\n');
+
   } else if(nordeste.any((e) => e.toLowerCase() == estado.toLowerCase())){
     stdout.write('O estado $nome pertence ao Nordeste\n');
+
   } else if(centrooeste.any((e) => e.toLowerCase() == estado.toLowerCase())) {
     stdout.write('O estado $nome pertence ao Centro-Oeste\n');
+
   } else if(sudeste.any((e) => e.toLowerCase() == estado.toLowerCase())){
     stdout.write('O estado $nome pertence ao Sudeste\n');
+
   } else if(sul.any((e) => e.toLowerCase() == estado.toLowerCase())){
     stdout.write('O estado $nome pertence ao Sul\n');
+
   } else{
     stdout.write('Estado não reconhecido\n');
+    
   }
 
   return;

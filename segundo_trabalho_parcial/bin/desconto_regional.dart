@@ -45,19 +45,19 @@ void main() {
 
   switch(escolha){
     case 1:
-      total = preco * 1.05;
+      total = preco * 0.95;
 
     case 2:
-      total = preco * 1.15;
+      total = preco * 0.85;
 
     case 3:
-      total = preco * 1.07;
+      total = preco * 0.93;
 
     case 4:
-      total = preco * 1.12;
+      total = preco * 0.88;
 
     case 5:
-      total = preco * 1.2;
+      total = preco * 0.8;
 
     default:
       total = preco;
