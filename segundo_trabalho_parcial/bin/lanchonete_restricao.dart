@@ -11,8 +11,6 @@ bebida escolhidos pelo cliente e determine se o pedido pode ou não ser atendido
 import 'dart:io';
 
 void main() {
-  var comidas = [101, 102, 103, 104, 105, 106, 107];
-  var bebidas = [108, 109, 110, 111];
 
   stdout.write('--- LANCHONETE ---\n');
   stdout.write('-*- COMIDAS -*-\n');
@@ -113,4 +111,6 @@ void main() {
   }
 
   stdout.write('O valor da compra eh de: $total\n');
+
+  return;
 }

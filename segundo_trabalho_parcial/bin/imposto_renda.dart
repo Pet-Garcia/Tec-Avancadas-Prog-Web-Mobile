@@ -40,5 +40,6 @@ void main() {
   }
 
   stdout.write('Salario: $salario | Valor do Imposto: $imposto | Salario Final: $salarioliquido\n');
+  
   return;
 }

@@ -29,7 +29,7 @@ void main() {
   String? codigo = stdin.readLineSync();
 
   if(codigo == null || codigo.isEmpty){
-    stdout.write('E obrigatorio o campo codigo!\n');
+    stdout.write('Código do lanche inválido!\n');
     return;
   }
 
@@ -63,7 +63,13 @@ void main() {
 
     case 106:
       total = 10 * quantidade;
+
+    default:
+      stdout.write('Código do lanche inválido!\n');
+      return;
   }
 
   stdout.write('O valor da compra eh de: $total\n');
+
+  return;
 }

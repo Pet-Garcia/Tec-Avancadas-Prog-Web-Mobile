@@ -35,4 +35,6 @@ void main() {
   }
 
   stdout.write('O seu premio é: $premio\n');
+
+  return;
 }

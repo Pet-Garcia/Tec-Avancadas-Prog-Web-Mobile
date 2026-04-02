@@ -65,4 +65,5 @@ void main() {
 
   stdout.write('O preco final do produto eh: $total\n');
 
+  return;
 }

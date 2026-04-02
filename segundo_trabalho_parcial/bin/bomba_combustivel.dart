@@ -68,6 +68,7 @@ void main() {
 
     stdout.write('\n --- Resultado da Compra --- \n');
     stdout.write('Combustivel: $nomecombustivel | Quantidade Comprada: $quantidade | Valor por Litro: $preco| Total(RS): $total\n');
+    
     return;
 
 }
